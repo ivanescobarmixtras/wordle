@@ -1,49 +1,96 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-     
-  h1 {
-    text-align: center;
-    margin-top: 50px;
-  }
-     
-  #guess-input {
-    display: block;
-    margin: 0 auto 20px;
-    padding: 10px;
-    font-size: 18px;
-    width: 250px;
-    border: 1px solid #ccc;
-  }
-     
-  #guess-button {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #0CBABA;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-  }
-     
-  button:active {
-      transform: scale(0.95);
-  }
-     
-  .letter {
-      border: 1px solid black;
-      padding: 3px;
-      margin: 3px;
-      min-width: 20px;
-      text-align: center;
-      display: inline-block
-  }
-     
-  .row{
-      margin-bottom: 10px;
-  }
-     
-  .input-area{
-      margin: 30px;
-  }
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#game-container {
+  text-align: center;
+}
+
+#word-display {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#guess-input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#guess-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ad5913;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#guess-button:hover {
+  background-color: #abcc32;
+}
+
+#feedback {
+  margin-top: 20px;
+}
+
+#attempts {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.green {
+  color: #79b851;
+}
+
+.yellow {
+  color: #f3c237;
+}
+
+.grey {
+  color: #a4aec4;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.letter {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+#feedback {
+  color: red;
+  font-weight: bold;
+}
+
